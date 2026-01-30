@@ -19,7 +19,8 @@ export default function Home() {
       x: Math.random() * Math.max(1, container.clientWidth - size.width),
       y: Math.random() * Math.max(1, container.clientHeight - size.height),
     };
-    const speed = 120;
+    
+    const speed = 160; 
     const velocity = {
       x: (Math.random() > 0.5 ? 1 : -1) * speed,
       y: (Math.random() > 0.5 ? 1 : -1) * speed,
@@ -56,6 +57,7 @@ export default function Home() {
     };
 
     const handleResize = () => {
+      if (!container || !dvd) return;
       size.width = dvd.offsetWidth;
       size.height = dvd.offsetHeight;
       position.x = Math.min(position.x, container.clientWidth - size.width);
@@ -74,13 +76,21 @@ export default function Home() {
   return (
     <div
       ref={containerRef}
-      className="relative h-[calc(100vh-3.5rem)] w-full overflow-hidden bg-zinc-50 font-sans dark:bg-black"
+      className="relative h-[calc(100vh-3.5rem)] w-full overflow-hidden bg-zinc-50 dark:bg-black"
     >
       <div
         ref={dvdRef}
-        className="absolute left-0 top-0 text-4xl font-semibold uppercase"
+        className="absolute left-0 top-0 will-change-transform flex flex-col items-center"
       >
-        My awesome and cool website
+        {/* FULL IMAGE - NO CROP, NO CIRCLE */}
+        <img 
+          src="/cin.png" 
+          alt="Franklin" 
+          className="w-48 md:w-64 h-auto shadow-2xl" 
+        />
+        <span className="mt-2 text-2xl font-black uppercase italic bg-orange-600 text-white px-4 py-1">
+          FRANKLIN &gt; VOID
+        </span>
       </div>
     </div>
   );
