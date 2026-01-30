@@ -45,9 +45,25 @@ You can run either by prepending `npm run <script>` to them. For example, `npm r
 
 # Questions - MUST ANSWER TO BE ENTERED INTO RAFFLE!
 1. Briefly describe everything you've added on from the starter template.
+Home Page: Added a bouncing "DVD-style" animation featuring my photo and the "Franklin > Void" logo.
+
+About Page: Built a "Head-to-Head" comparison section that uses photos and a table to show why my stats are better than the competition.
+
+Projects Page: Created custom cards for my top projects, specifically highlighting my National ranking.
+
+Contact Page: Designed a layout that makes it easy to find my info while "disabling" contact for the competition.
 
 2. What's the first impression you want a website visitor to have about you? How does your website accomplish that?
+The Impression: I want them to see I am a leader who delivers high-level results, not just a student "trying things out".
+
+How it works: The site uses massive bold text and direct comparisons to show my 4th place National ranking and Eagle Scout rank immediately.
 
 3. What's your favorite part of the website you've made? What needs improvement?
+Favorite Part: The bouncing image on the home page. It’s fun, catches the eye, and makes the "Franklin > Void" message impossible to miss.
 
-4. Where would you take your website in the future? Talk about additonal sections, aspirations, etc.
+Improvement: I’d like to make the images load even faster on slow mobile connections.
+
+4. Where would you take your website in the future? Talk about additional sections, aspirations, etc.
+New Content: I want to add a blog section where I combine my Computer Science knowledge with my History minor.
+
+Interactive Features: I plan to add a live "Project Tracker" that pulls data directly from my GitHub to show my daily progress.
